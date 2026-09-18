@@ -62,7 +62,7 @@ function Workspace() {
         <TopBar />
         <CommandBar active={active} onSelect={focus} />
 
-        <div className="grid grid-cols-1 gap-5 lg:grid-cols-[236px_minmax(0,1fr)]">
+        <div className="grid grid-cols-1 items-start gap-5 md:grid-cols-[220px_minmax(0,1fr)] xl:grid-cols-[260px_minmax(0,1fr)]">
           <LeftRail tasks={tasks} blocks={blocks} />
 
           <main className="space-y-5">
@@ -88,7 +88,7 @@ function Workspace() {
               }
             />
 
-            <div className="grid grid-cols-1 gap-5 xl:grid-cols-2">
+            <div className="grid grid-cols-1 items-start gap-5 lg:grid-cols-2">
               <SchedulePanel blocks={blocks} onBlocks={setBlocks} tasks={tasks} />
               <TasksPanel tasks={tasks} onTasks={setTasks} />
             </div>

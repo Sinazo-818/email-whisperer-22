@@ -10,7 +10,7 @@ export function LeftRail({ tasks, blocks }: { tasks: Task[]; blocks: ScheduleBlo
     kind === "meeting" ? "bg-accent" : kind === "focus" ? "bg-primary" : "bg-foreground/30";
 
   return (
-    <aside className="space-y-5">
+    <aside className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:sticky md:top-5 md:grid-cols-1 md:self-start">
       <div className="deck-panel p-4">
         <div className="mb-3 label-mono">Today</div>
         <div className="flex items-baseline gap-2">
